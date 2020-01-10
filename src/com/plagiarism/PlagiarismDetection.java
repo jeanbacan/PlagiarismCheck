@@ -34,6 +34,8 @@ public class PlagiarismDetection {
     }
 
     protected String stripSynonyms(String textToReplace){
+        //Decided to leave the generify here, but it could be more generic regarding implementation.
+        //Also simple to update to multiple synonyms per text, but then would extract this method maybe.
         for (String syn : synonyms){
             textToReplace = textToReplace.replace(syn, "{#}");
         }
