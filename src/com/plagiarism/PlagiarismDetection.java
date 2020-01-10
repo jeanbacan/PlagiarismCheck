@@ -51,6 +51,8 @@ public class PlagiarismDetection {
                             "3) Input file 2\n" +
                             "4) (Optional) Tuple size, default is 3");
         }
+
+        //Assumed we are working with one line for now in the scanner
         Scanner scSynonyms = new Scanner(new FileReader(args[0]));
         Scanner scFile1 = new Scanner(new FileReader(args[1]));
         Scanner scFile2 = new Scanner(new FileReader(args[2]));
